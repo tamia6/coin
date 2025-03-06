@@ -11,6 +11,7 @@ type CoinMsg struct {
 	Symbol   int    `json:"symbol"`
 	Contract string `json:"contract"`
 	Height   string `json:"height"`
+	User     string `json:"user"`
 }
 
 type CoinOutReq struct {
