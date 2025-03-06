@@ -16,6 +16,7 @@ func (c *ControllerV1) Withdraw(ctx context.Context, req *v1.WithdrawReq) (res *
 		CoinType: req.CoinType,
 		Amount:   gconv.String(req.Amount),
 		Address:  req.Address,
+		User:     req.Flag,
 	})
 	if err != nil {
 		return

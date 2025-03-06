@@ -17,4 +17,5 @@ type CoinOutReq struct {
 	CoinType int    `json:"coin_type"`
 	Amount   string `json:"amount"`
 	Address  string `json:"address"`
+	User     string `json:"user"`
 }
