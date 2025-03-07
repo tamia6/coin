@@ -8,9 +8,9 @@ type CoinMsg struct {
 	To       string `json:"to"`
 	Amount   string `json:"amount"`
 	Decimal  int    `json:"decimal"`
-	Symbol   int    `json:"symbol"`
+	Symbol   string `json:"symbol"`
 	Contract string `json:"contract"`
-	Height   string `json:"height"`
+	Height   int    `json:"height"`
 	User     string `json:"user"`
 }
 
