@@ -6,7 +6,7 @@ type CoinMsg struct {
 	Tx       string `json:"tx"`
 	From     string `json:"from"`
 	To       string `json:"to"`
-	Amount   int    `json:"amount"`
+	Amount   string `json:"amount"`
 	Decimal  int    `json:"decimal"`
 	Symbol   int    `json:"symbol"`
 	Contract string `json:"contract"`
