@@ -1,6 +1,7 @@
 package cmd
 
 import (
+	"ccarbon-coin/internal/middleware"
 	"context"
 
 	"github.com/gogf/gf/v2/frame/g"
@@ -17,6 +18,7 @@ var (
 		Brief: "start http server",
 		Func: func(ctx context.Context, parser *gcmd.Parser) (err error) {
 			s := g.Server()
+			s.Use(middleware.CheckWhite)
 			s.Group("/", func(group *ghttp.RouterGroup) {
 				group.Middleware(ghttp.MiddlewareHandlerResponse)
 				group.Bind(
