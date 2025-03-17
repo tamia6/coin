@@ -1,0 +1,13 @@
+[Unit]
+Description=CoinApi
+After=redis-server.service
+
+[Service]
+Type=simple
+WorkingDirectory=/root/coin-api
+ExecStart=/root/coin-api/coin
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
